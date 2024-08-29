@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Nutrient Analysis: What Makes Chicken Soup Essential After Surgery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: rgb(74, 85, 104);
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerfooter {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: rgb(74, 85, 104);
+        }
+        h3 {
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .author span {
+            margin-right: 5px;
+        }
+        .meta {
+            font-size: 0.9em;
+            color: rgb(74, 85, 104);
+        }
+        .content hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav .nav-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(74, 85, 104);
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(74, 85, 104);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: rgb(74, 85, 104);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9370DB;
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+        .author-box {
+            max-width: 1076px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .author-box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .author-box .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-box .info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(74, 85, 104);
+        }
+        .author-box .info p {
+            margin: 5px 0 10px;
+            color: rgb(74, 85, 104);
+            font-size: 16px;
+        }
+        .author-box .social-media {
+            display: flex;
+            align-items: center;
+        }
+        .author-box .social-media a {
+            color: #9370DB;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .author-box .social-media a i {
+            margin-right: 5px;
+        }
+        .author-box .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow:none;
+        }
+        footer .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer .column h3 {
+            font-size: 16px;
+            color: rgb(74, 85, 104);
+            margin-bottom: 10px;
+        }
+        footer .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .column ul li {
+            margin-bottom: 5px;
+        }
+        footer .column ul li a {
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        footer .column ul li a:hover {
+            color: #9370DB;
+        }
+        footer .social-media a {
+            display: block;
+            color: rgb(74, 85, 104);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        footer .social-media a i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer .social-media a:hover {
+            color: #9370DB;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .author-box img {
+                margin-bottom: 10px;
+            }
+            .author-box .info h3 {
+                font-size: 20px;
+            }
+            .author-box .info p {
+                font-size: 14px;
+            }
+            footer .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            footer .column {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="/">Latest News</a></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#authors">News</a></li>
+                <li><a href="#authors">Categories</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="https://image-cloud-server.netlify.app/image_Screenshot_at_Aug_29_16-25-03.png" class="header-image">
+        <h1>Detailed Nutrient Analysis: What Makes Chicken Soup Essential After Surgery</h1>
+        <div class="author">
+           
+            <span>By Ethan Walker</span> 
+            <span class="meta"> · 29 August 2024 · 5 min read</span>
+        </div>
+ 
+
+
+       
+        <div class="content">
+            <hr>
+             <h2>Nutritional Components of Chicken Soup</h2>
+
+<p>Chicken soup is more than just a warm bowl of comfort. It contains various <strong>nutritional components</strong> that can significantly aid recovery after surgery. The combination of proteins, vitamins, and minerals work in harmony to help the body heal. Each ingredient contributes its unique benefits, ensuring that your body receives what it needs.</p>
+
+<p>The base of chicken soup usually involves <strong>chicken meat</strong>, which is rich in nutrients. Adding vegetables and herbs enhances the nutrition further. This combination provides a complete food source that encourages healing. Imagine a warm, soothing bowl full of not only flavor but also health benefits. Isn’t that comforting to think about?</p>
+
+<h2>Proteins</h2>
+
+<h3>Types of Proteins Present</h3>
+
+<p>In chicken soup, you primarily find <strong>high-quality proteins</strong> that come from chicken. The meat is filled with essential building blocks for your body. These proteins are crucial in forming new tissues and skin after surgery. Do you wonder how necessary proteins are for recovery? Without them, healing can stall, and recovery may take longer.</p>
+
+<p>It's interesting to note that broth made from chicken bones adds even more protein. As the bones simmer, they release collagen into the soup. This adds to the protein content, making it even more beneficial. So, when you sip that warm broth, you’re doing your body a big favor.</p>
+
+<h3>Role in Tissue Repair</h3>
+
+<p>When you undergo surgery, your body needs to <strong>repair damaged tissues</strong> swiftly. Proteins from chicken soup play a vital role in this process. They help construct new cells and tissues, ensuring your body heals efficiently. Is there anything more comforting than knowing your food is actively working to repair you?</p>
+
+<p>Additionally, proteins are necessary for maintaining your skin's integrity. After surgery, your skin barrier protects you from infections. Consuming adequate protein helps maintain the skin’s health, making it resilient. By choosing chicken soup, you’re fueling this important aspect of recovery.</p>
+
+<h3>Importance for Muscle Maintenance</h3>
+
+<p>Muscle maintenance is often overlooked during recovery. Surgery can lead to muscle loss, especially if you’re immobile for a time. The proteins in chicken soup are crucial for <strong>sustaining muscle mass</strong>. They support muscle fibers, ensuring you regain strength quickly.</p>
+
+<p>Unlike solid meals, chicken soup is easier to consume, especially when appetite might be low. It provides an easy source of nourishment to maintain muscle health. Isn't it incredible how simple food can contribute to such significant outcomes?</p>
+
+<h2>Vitamins in Chicken Soup</h2>
+
+<h3>Vitamin A</h3>
+
+<p>Vitamin A is notable in chicken soup, primarily from added vegetables like carrots. This vitamin is essential for cell growth and immune function. Have you thought about how your immune system works hard to fight off infections after surgery?</p>
+
+<p>A good source of vitamin A ensures your body can detect and fight off potential invaders. It also helps keep your skin healthy and promotes healing. This means each bowl of chicken soup might just add a little boost to your immunity. </p>
+
+<h3>Vitamin C</h3>
+
+<p>Vitamin C is another vital component found in chicken soup. Ingredients such as onions, garlic, and peppers are wonderful sources. This vitamin supports your body in producing collagen, an essential protein for tissue repair. With this, isn't it clear how nourishing a bowl can be?</p>
+
+<p>Furthermore, vitamin C aids in iron absorption, another critical nutrient needed after surgery. Anemia can be a concern, especially if you've lost blood. By adding some vitamin C-rich ingredients to your soup, you’re indirectly helping with recovery. Isn't it fascinating how individual nutrients interact to promote health?</p>
+
+<h3>B Vitamins</h3>
+
+<p>Chicken soup also contains a range of <strong>B vitamins</strong> that help your body convert food into energy. These vitamins support brain function and mood, which can be especially helpful during recovery periods. When you’re feeling low energy, the last thing you need is a food that weighs you down.</p>
+
+<p>Each of these B vitamins plays a role in different bodily functions. They contribute to red blood cell formation and overall vitality. Consuming chicken soup can help ensure you’re getting these important vitamins needed for a full recovery.</p>
+
+<h3>Their Role in Recovery</h3>
+
+<p>As you can see, vitamins play various roles in recovery, from immune support to energy production. They help strengthen your body after the stress of surgery. Are you feeling more motivated to enjoy your next bowl of soup now?</p>
+
+<p>Together, these vitamins enhance the healing process. They work symbiotically to ensure your body operates at its best. So, savor each spoonful knowing it’s supporting your journey toward optimal health.</p>
+
+<h2>Mineral Content in Chicken Soup</h2>
+
+<h3>Calcium</h3>
+
+<p>Calcium is one mineral that may not immediately come to mind when you think of chicken soup. However, if you use chicken bones in the broth, you will likely find a significant amount of calcium. This mineral is essential for maintaining strong bones, especially post-surgery. Are you curious how calcium in your soup can aid in recovery?</p>
+
+<p>As you heal, having sufficient calcium helps reduce the risk of complications later. Furthermore, it aids in muscle function and supports nerve signaling. Each bowl of chicken soup is like a mini wellness booster, isn’t it?</p>
+
+<h3>Magnesium</h3>
+
+<p>Magnesium is another essential mineral that supports recovery after surgery. It plays a vital role in over 300 biochemical reactions in your body. Remarkably, magnesium helps regulate muscle and nerve function, which is crucial after surgery when your body is adjusting.</p>
+
+<p>Additionally, it aids in protein synthesis, supporting the tissue repair process significantly. So, as you enjoy your soup, relish the thought that each spoonful contributes to more than just flavor. It’s packing in minerals to enhance your well-being.</p>
+
+<h3>Phosphorus</h3>
+
+<p>Phosphorus works hand-in-hand with calcium to promote strong bones. It's often found in chicken and is another important mineral in chicken soup. Phosphorus plays a key role in energy production as well, which can be beneficial during recovery periods. During this time, your body's energy needs may increase.</p>
+
+<p>Without adequate phosphorus, your body might struggle to maintain the energy levels needed for healing. As you sip your chicken soup, remember this mineral is there working tirelessly for you!</p>
+
+<h3>Sodium and Potassium Balance</h3>
+
+<p>Sodium and potassium are vital electrolytes. They help maintain balance in your body's fluid levels, especially after losses due to surgery. Chicken soup often contains these electrolytes naturally. Too much sodium can easily lead to complications, but a moderate amount can be quite beneficial.</p>
+
+<p>These electrolytes help ensure that your muscles and nerves function correctly. They also assist in hydration, ensuring you feel good as you recover. Keeping this balance is essential for your overall well-being, wouldn’t you agree?</p>
+
+<h3>Impact on Bone Health</h3>
+
+<p>With the combination of calcium, magnesium, and phosphorus, chicken soup holds a unique benefit for bone health. Chicken soup can effectively contribute to building and repairing bone tissue post-surgery. Strong bones equate to a better recovery experience.</p>
+
+<p>As you enjoy your soup, you're not just eating for immediate pleasure but investing in your long-term health. Isn't it inspiring to know that a simple dish can have such a significant impact?</p>
+
+<h2>Hydration and Electrolyte Balance</h2>
+
+<h3>Importance of Hydration Post-Surgery</h3>
+
+<p>Staying hydrated after surgery is crucial. Your body needs to flush out medications and heal tissues, which require water. Chicken soup contains rich broth, which can assist in maintaining hydration effectively. You can continually replenish fluids while enjoying a nourishing meal.</p>
+
+<p>Plus, hydration aids in digestion, appetite, and even mood. Have you ever noticed how much better you feel with a well-hydrated body? Each bowl of chicken soup provides warmth and hydration in one go, offering double benefits.</p>
+
+<h3>Electrolyte Balance for Recovery</h3>
+
+<p>Electrolytes are vital for body functions. They help conduct electrical signals necessary for muscle contractions and nerve impulses. After surgery, maintaining this balance can be pivotal in the recovery process. Chicken soup contains sodium and potassium, helping you keep your electrolyte levels in check.</p>
+
+<p>Keeping your electrolytes balanced helps your body function properly. This balance reduces the risk of complications like muscle cramps or fatigue. Isn’t it reassuring to know that your soup is working to keep your body functioning smoothly?</p>
+
+<h3>Role of Sodium and Potassium</h3>
+
+<p>Both sodium and potassium play key roles in recovery. Sodium assists in fluid balance, while potassium helps maintain heart and muscle functions. Eating chicken soup allows you to benefit from both while also ensuring hydration. </p>
+
+<p>Should you find yourself craving salty or flavorful foods post-surgery, chicken soup can satisfy both needs. You're not just comforting yourself; you're providing your body with essential nutrients. Isn’t that a wonderful reason to savor your next spoonful?</p>
+
+<h2>Anti-inflammatory Properties</h2>
+
+<h3>Compounds with Anti-inflammatory Effects</h3>
+
+<p>Chicken soup also has <strong>anti-inflammatory properties</strong> that significantly aid recovery after surgery. Ingredients like garlic and onions contain compounds known to help beat inflammation. A reduced inflammatory response means less swelling and faster recovery. Isn’t that a comforting thought?</p>
+
+<p>Additionally, the warmth of the soup can soothe your body, promoting relaxation. This positive effect can be particularly helpful when you're under stress from surgery. Enjoying a hot bowl can help both mind and body heal together.</p>
+
+<h3>Impact on Reducing Post-operative Swelling</h3>
+
+<p>Post-operative swelling can be uncomfortable. The anti-inflammatory properties in chicken soup help reduce this swelling naturally. Eating this soothing broth can ease discomfort and promote circulation, which is essential after surgery.</p>
+
+<p>This leads to improved healing times, making recovery much smoother. Have you ever experienced relief simply by nourishing your body with the right foods? Each bowl contributes to a positive impact on how you feel and heal.</p>
+
+<h3>General Benefits for Healing</h3>
+
+<p>Besides inflammation, chicken soup encourages digestion and nutrient absorption. These are fundamental processes, especially when your body is in recovery mode. A healthy gut allows for better nourishment, which in turn supports healing.</p>
+
+<p>In essence, enjoying chicken soup is like giving yourself a gentle hug. Each ingredient works together to create a nurturing and healing experience. With each bite, you can feel the sensation of care flowing through your body as you recover.</p>
+
+<h2>Easily Digestible Nature</h2>
+
+<h3>Importance of Easily Digestible Foods Post-Surgery</h3>
+
+<p>Post-surgery, your body may struggle to handle complex foods. <strong>Easily digestible foods</strong> can ease this process. Chicken soup falls into this category perfectly. The soft textures and warmth make it simple for your digestive system to process.</p>
+
+<p>When you eat something light and nutritious, your body can focus on healing instead of working hard to digest. Have you thought about how significant this can be for comfort during recovery? The simplicity of chicken soup is indeed its strength.</p>
+
+<h3>Reduced Strain on the Digestive System</h3>
+
+<p>When recovering from surgery, the digestive system may be sensitive. Rich, heavy meals can cause discomfort and bloating. Chicken soup acts as a gentle option that supports digestion. The nutrient-rich broth allows for easier consumption that doesn’t burden your body.</p>
+
+<p>Instead of opting for heavy meals, consider the advantages of a soothing bowl. Sipping on this warm broth can lead to a sense of relief during such a critical time. Doesn't it sound comforting to offer your body what it genuinely needs?</p>
+
+<h3>Benefits for Patients with Reduced Appetite</h3>
+
+<p>Some patients face a reduced appetite after surgery, making it challenging to consume adequate nutrition. Chicken soup can serve as an ideal choice here. The mild flavors and easy-to-eat nature encourage eating without overwhelming the stomach.</p>
+
+<p>For those who struggle to eat solids, chicken soup can provide essential nutrients and hydration. It's a way to nourish your body without feeling full. Isn't it a lovely idea to focus on comfort while obtaining nutrition?</p>
+
+<h2>Psychological Comfort and Well-being</h2>
+
+<h3>Comfort Food Aspect</h3>
+
+<p>Chicken soup is known as a classic comfort food. It evokes feelings of warmth and care, reminding you of home and family. After surgery, feeling secure and relaxed can greatly enhance your healing process. Have you ever noticed how emotional well-being can impact physical healing?</p>
+
+<p>Eating beloved, familiar foods can elevate your mood. They wrap you in a feeling of warmth during tough times. This food offers not just physical nourishment but also emotional support, which is equally vital during recovery.</p>
+
+<h3>Mood Improvement</h3>
+
+<p>The act of consuming comforting food can improve mood significantly. Each warm bite can lift you up during challenging moments. Chicken soup can feed your body and soul, offering an uplifting experience.</p>
+
+<p>Consider how food impacts your emotions. When you enjoy something that brings you comfort, it can stimulate feelings of positivity. Isn’t it wonderful how a simple bowl of soup can wield such powerful effects on mood?</p>
+
+<h3>Link Between Well-being and Recovery</h3>
+
+<p>Studies show that mental well-being can influence physical recovery. When you feel content, your body is more likely to recover faster. Chicken soup serves as a delightful reminder of nurturing and care, helping to foster this connection. </p>
+
+<p>By providing both physical and emotional nourishment, you can improve your overall wellness. As you enjoy your bowl of chicken soup, think about how much more than food it represents in your recovery journey. Consider exploring the <a href="https://www.aimhealthyu.com/tw/star/13/pregnant-women-chicken-soup-yoga">Benefits of Chicken Essence Consumption for Pregnant Women</a> while nourishing your body. Isn't it amazing how one dish combines so many essential aspects of well-being?</p>
+
+<h2>Customizing Chicken Soup for Optimal Recovery</h2>
+
+<h3>Adding Vegetables for Extra Nutrients</h3>
+
+<p>Adding vegetables to your chicken soup can maximize its benefits. Ingredients like carrots, peas, or spinach make the soup colorful and nutrient-rich. Each vegetable brings its unique profile, contributing vitamins and minerals for recovery.</p>
+
+<p>Customizing your soup allows you to introduce even more goodness. Have you considered how delightful it can be to experiment with flavors while boosting nutrition? The possibilities are endless, and your body will appreciate your efforts.</p>
+
+<h3>Herbs and Spices with Healing Properties</h3>
+
+<p>Herbs and spices serve to enhance not only flavor but also nutritional value. Ginger, turmeric, and garlic are fantastic additions known for their healing properties. They can reduce inflammation and bolster recovery efforts.</p>
+
+<p>With just a sprinkle, you can transform a regular chicken soup into a supercharged healing meal. Inviting these flavors contributes even more wellness to your bowl. Doesn’t it sound exciting to create a masterpiece in your kitchen?</p>
+
+<h3>Adjustments Based on Dietary Restrictions or Preferences</h3>
+
+<p>Everyone has unique dietary needs. Chicken soup can be easily adjusted for allergies or preferences. For those who are vegetarian, a broth made with mixed vegetables can be equally soothing and nutritious.</p>
+
+<p>By respecting individual requirements, you ensure that everyone can enjoy its comforting effects. It’s empowering to create something that caters to diverse needs while providing nourishment. Isn’t it rewarding when food becomes a canvas for care and consideration?</p>
+
+            
+
+
+            <br><br> <p>
+                
+                custom 
+            
+
+        
+
+
+<br><br>
+        
+        </p>
+
+        
+
+        
+
+
+             
+           <br> <p>
+            <div class="next">
+       Related article: <a href="https://education-blogger.s3.eu-de.cloud-object-storage.appdomain.cloud/chicken-soup-benefits.html">Read more</a>
+    </div>
+       </p>
+        </div>
+    </div>
+    
+
+    <div class="author-box">
+     
+        <div class="info">
+            <h3>Ethan Walker</h3>
+            <p>Senior Copywriter</p>
+            <p>Ethan Walker is a seasoned copywriter with a specialized focus on health and wellness topics, particularly the benefits of consuming chicken essence. With years of experience in crafting compelling content, Ethan has become an authority on the nutritional advantages of chicken essence, especially for post-surgery recovery and prenatal health. His insightful articles and engaging copy have empowered readers to make informed decisions for enhancing their well-being through dietary choices.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <h3>Daily Dose of News</h3>
+                <p>&copy; 2024, All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Advertise with us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Legal Stuff</h3>
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Social Media</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags within the div with class 'next'
+    const links = document.querySelectorAll('div.next a');
+
+    // Iterate over each link
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+
+        // Check if href is valid and does not end with .html or any other file extension
+        if (href && !href.endsWith('.html') && !href.match(/\.\w+$/)) {
+            // Add .html extension
+            href += '.html';
+            link.setAttribute('href', href);
+        }
+    });
+});
+
+ </script>
+ 
+</body>
+</html>
